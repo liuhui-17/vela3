@@ -1,0 +1,10 @@
+SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
+
+MESSAGE(STATUS "[vela] Binary dir:" ${PROJECT_BINARY_DIR})
+
+ADD_EXECUTABLE(vela3 main.cpp)
+
+# 设置安装目录
+INSTALL(TARGETS vela3 
+        RUNTIME DESTINATION install
+        )
